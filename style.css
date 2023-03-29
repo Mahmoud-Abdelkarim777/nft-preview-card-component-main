@@ -1,0 +1,126 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue : hsl(217, 54%, 11%); /*main bg*/
+    --Very-dark : hsl(216, 50%, 16%);/*card bg*/
+    --Very : hsl(215, 32%, 27%);/*line bg*/
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color:var(--Very-dark-blue);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--Very-dark) ;
+    width: 250px;
+    padding: 20px;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.container #img{
+    border-radius: 5px;
+}
+.container :hover#img{
+    border-radius: 5px;
+}
+.container .hover_img{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    margin: 20px;
+    padding: 80px;
+    cursor: pointer;
+
+}
+.container:hover .hover_img {
+    display: inline;
+    align-self: center;
+    background-color: var(--Cyan);
+    
+}
+.container .container-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.container .container-icon .container-icon1{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+.container .container-footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .container-footer img{
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px inset white;
+}
+.container #font1{
+    color: var(--White);
+}
+.container :hover#font1{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.container #font2{
+    color:var(--Soft-blue) ;
+    font-size:13px ;
+}
+.container .container-icon .container-icon1 #font3{
+    color:var(--Cyan) ;
+    font-size:13px ;
+}
+.container .container-icon .container-icon1 #font4{
+    color:var(--Soft-blue) ;
+    font-size:13px ;
+}
+.container .container-footer #font5{
+    font-size:13px ;
+}
+.container .container-footer #text1{
+    color: var(--Soft-blue);
+}
+.container .container-footer #text2{
+    color: var(--White);
+}
+.container .container-footer :hover#text2{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+hr{
+    border: 1px solid var(--Very);
+}
+.attribution { font-size: 11px; text-align: center; color: white; position: absolute; bottom: 160px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+@media  screen and (max-width: 360px) {
+    .container{
+    width: 300px;
+}
+    .attribution { position: absolute; bottom: 110px;}
+}
+@media  screen and (min-width: 361px) and (max-width: 740px) {
+    .container{
+    width: 300px;
+}
+    .attribution { position: absolute; bottom: -80px;}
+}
