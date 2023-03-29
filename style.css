@@ -110,7 +110,7 @@ body{
 hr{
     border: 1px solid var(--Very);
 }
-.attribution { font-size: 11px; text-align: center; color: white; position: absolute; bottom: 160px;}
+.attribution { font-size: 11px; text-align: center; color: white; position: absolute; bottom: 100px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 @media  screen and (max-width: 360px) {
     .container{
